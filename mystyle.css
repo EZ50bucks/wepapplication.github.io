@@ -1,0 +1,206 @@
+/*
+Author: Phu Long Dinh - 101482379
+Student of Swinburne University
+Major: Master of engineering science: Network system and telecommunication
+Purpose: CSS file use to apply stylesheet for assignment of Web Application
+*/
+
+
+header {
+  background:url(background.jpg) repeat-x bottom;
+  height: 250px;
+  width: 100%;
+}
+
+header img{
+  height: 250px;
+}
+
+/*Underline the heading*/
+h1 {
+  color: tomato;
+  font-size: 2em;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  text-decoration: underline;
+}
+
+
+/*All the anchor of heading1 when move mouse over it will change background color to cornsilk*/
+h1 a:hover {
+  background-color: cornsilk;
+}
+
+nav {
+}
+
+nav a:hover{
+  background-color: lightgray ;
+  font-weight: bold;
+  text-shadow: 0px 0.5px #e0b3ff;
+}
+
+nav ul{
+  margin-left: 3em;
+  padding: 0em;
+}
+
+nav ul li{
+  width: 16%;
+  text-align: center;
+  float: left;
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  font-size: 1.25em;
+  padding: 1em .75em;
+  border: 2px solid #e68a00;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 2.5em;
+  background-color: #f6ddbc;
+}
+
+
+/*minimum height of the line*/
+p {
+  line-height: 180%;
+  text-align: justify;
+}
+
+/* select paragraph with class question in FAQ.html files
+change size and make it bold*/
+p.question{
+  font-size: 1.2em;
+  padding: 1em;
+  font-weight: 600;
+}
+
+footer{
+  clear: both;
+}
+
+footer p{
+  font-size: small;
+  text-align: center;
+}
+
+dt {
+  text-align: left;
+  font-size: 1.5em;
+}
+
+dd {
+  text-align: right;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+img {
+  border-width: thin;
+  border-radius: 1px;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: #deb887;
+}
+
+table, th, td{
+  border: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+}
+
+a:visited{
+  color: #994d00;
+}
+
+a:active{
+  color: cornflowerblue;
+}
+
+aside{
+  border: 4px inset #994d00;
+  float: right;
+  width: 21%;
+  margin: 1em;
+  padding: 1em;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+form{
+  font-size: 1.25em;
+}
+
+form figure{
+
+}
+
+article.advance{
+  font-size: 1.2em;
+}
+
+article.advance ul li {
+  list-style: circle;
+}
+
+
+h2.specific {
+/*  border: 4px inset black; */
+  text-align: justify;
+  font-family: 'Baloo Bhaijaan', arial;
+  font-size: 160%;
+}
+
+/*select class data in aboutus.html*/
+section.data {
+/*  border: 4px inset red; */
+  width: 70%;
+  padding: 0em 1em;
+  margin-bottom: 1em;
+}
+
+article.content{
+/*  border: 4px inset green; */
+  text-align: justify;
+  font-family: 'Mukta+Mahee', sans-serif;
+  font-size: 1.1em;
+}
+
+section.summary{
+/*  border: 4px inset coral; */
+  width: 12%;
+  float: left;
+  margin: 0% 1%;
+  margin-bottom: 500px;
+  font-size: .85em;
+  text-align: left;
+}
+
+section.contentsum{
+/*  border: 4px inset darkorange; */
+  width: 70%;
+  padding: 0em 1em;
+}
+
+section.contentsum ul li{
+  list-style: none;
+  position: relative;
+  left: 1em;
+}
+
+
+section.contentsum article{
+  font-size: 1.2em;
+  margin: 1.5em 0em;
+}
+
+h1 a.list{
+  font-family: 'Mukta+Mahee', sans-serif;
+  text-align: left;
+  font-size: 0.9em;
+  font-style: oblique;
+}

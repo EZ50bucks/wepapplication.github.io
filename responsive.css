@@ -1,0 +1,71 @@
+/*responsive.css*/
+/*media query for display: over 500*/
+
+@media screen and (min-width:31.25em) { /*mean 500px = 31.25*16*/
+
+
+  nav ul li {
+    width: 33%;
+    text-align: center;
+  }
+
+  aside {
+    width: 95%;
+  }
+
+  section.data{
+    width: 95%;
+  }
+
+  section.contentsum{
+    width: 30%;
+    float: left;
+  }
+
+  section.contentsum{
+    background-color: antiquewhite;
+    width: 65%;
+    margin: 0 1em 1em 1.5em;
+  }
+
+/*  #section3 img{
+    float: left;
+    width: 30%;
+    margin: .5em 1em 1em 0;
+  }
+
+  article{
+    min-width: 600px;
+  }
+}
+
+@media screen and (max-width:31.25em) {
+
+  header h1{
+    font-size: 48px;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav ul li{
+    width: 50%;
+  }
+
+  #section1, #section2, #section3{
+    margin: 0;
+    float: none;
+    width: 100%;
+  }
+
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+
+  article{
+    min-width: 250px;
+  }
+}
+
+
+*/

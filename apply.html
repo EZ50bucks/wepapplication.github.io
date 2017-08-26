@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Recruitment Web" />
+    <meta name="keywords" content="Recruitment, job, position" />
+    <meta name="author" content="Phu Long Dinh" />
+    <link rel="stylesheet" href="mystyle.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet"/>
+    <title>Apply form</title>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <p><img src="logo.jpg" alt="logo"/></p>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Main page</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="apply.html">Create application</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <aside class="">
+        <p>This is aside and this is use for advertisement</p>
+        <p>A lot of things here we need to fill in</p>
+        <img src="" alt="abcd">
+      </aside>
+
+      <section class="data">
+        <h1>Application form</h1>
+        <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+          <fieldset>
+            <legend>Applicant information</legend>
+            <p><label>Job reference number
+              <input type="text" name="JobRef" pattern="^[A-Z]{5}$" required="required"/>
+            </label></p>
+            <p><label>First name
+              <input type="text" name="Firstname" maxlength="20" pattern="^[a-zA-Z]+$" size="10" required="required" />
+            </label></p>
+            <p><label>Last name
+              <input type="text" name="Lastname" maxlength="20" pattern="^[a-zA-z]+$" size="10" required="required" />
+            </label></p>
+            <p><label>Date of birth
+              <input type="text" name="DOB" placeholder="dd-mm-yyyy" maxlength="10" size="10" pattern="\d{2}-\d{2}-\d{4}" required="required" />
+            </label></p>
+          </fieldset>
+          <fieldset>
+            <legend>Gender</legend>
+            <p><label>
+              <input type="radio" name="Gender" value="Male" checked="checked"/>Male
+            </label>
+            <label><input type="radio" name="Gender" value="Female" />Female
+            </label>
+            <label><input type="radio" name="Gender" value="Private" /> Keep it private
+            </label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Contact</legend>
+            <p><label>Street address
+              <input type="text" name="Street Address" maxlength="40" size="20" required="required" />
+            </label></p>
+            <p><label>Suburb
+              <input type="text" name="Suburb" maxlength="40" size="15" required="required" />
+            </label></p>
+            <p><label>State
+              <select name="State" required="required">
+                <option value="">Please select</option>
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="NT">NT</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+              </select>
+            </label></p>
+            <p><label>Postcode
+              <input type="text" name="Postcode" required="required" pattern="\d{4}" />
+            </label></p>
+            <p><label>Email
+              <input type="text" name="Email" required="required" pattern="^.+@+\..{2,3}$" placeholder="user@gmail.com" />
+            </label></p>
+            <p><label>Phone number
+              <input type="text" name="Phone" required="required" pattern="(\d|/x){8,12}"/>
+            </label></p>
+          </fieldset>
+          <fieldset>
+            <legend>Requirement</legend>
+            <p><label>
+              <input type="checkbox" name="Skill[]" value="CCNA"/>CCNA
+              </label>
+              <label>
+              <input type="checkbox" name="Skill[]" value="CCNP"/>CCNP
+              </label>
+              <label>
+              <input type="checkbox" name="Skill[]" value="MCSA"/>MCSA
+              </label>
+              <label>
+              <input type="checkbox" name="Skill[]" value="MCSE"/>MCSE
+              </label>
+              <label>
+              <input type="checkbox" name="Skill[]" value="VMWare"/> VMWare
+              </label>
+              <label>
+              <input type="checkbox" name="Skill[]" value="Other"/>Other skills
+              </label></p>
+            <p><label>Other skills
+              <input type="text" name="Otherskills"/>
+            </label></p>
+           </fieldset>
+           <p>
+             <input type="submit" value="Apply"/>
+             <input type="reset" value="Reset form"/>
+           </p>
+        </form>
+      </section>
+
+
+    </main>
+  </body>
+</html>
